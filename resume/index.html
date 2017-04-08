@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script>
+        /*移动适配*/
+        var desW = 640;
+        var winW = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = winW/desW*100+"px";
+    </script>
+</head>
+<body>
+<section class="main">
+    <div class="music">
+        <audio src="audio/beyond.mp3" loop preload="none" id="beyond"></audio>
+          <!--
+          preload:none 不提前进行预加载
+                 :auto 提前进行预加载
+          -->
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1" >
+                <div class="grJl">
+                    <span class="wZ">个人简历</span>
+                </div>
+                <div class="grJl1">
+                    <span class="yW">Personal Resume</span>
+                </div>
+            </div>
+            <div class="swiper-slide slide2">
+                <div class="btn">
+                    <span class="btn1">I WANT A</span>
+                    <span class="btn2">JOB</span>
+                </div>
+                <div class="img">
+                    <img src="img/x8NcuLXRnK9KwAAAABJRU5ErkJggg==.png" alt=""/>
+                </div>
+                <div class="book">
+                    <span class="book1">常情</span>
+                </div>
+                <div class="scc">
+                    <br/><span class="scc1">SCHOOL</span>
+                    <span class="scc2">工商管理专修学院</span><br/>
+                    <br/><span class="scc1">MAJORS</span>
+                    <span class="scc2">计算机</span><br/>
+                    <br/><span class="scc1">E-MAILS</span>
+                    <span class="scc2">2621008548@qq.com</span><br/>
+                    <br/><span class="scc1">PHONES</span>
+                    <span class="scc2">182014599338</span>
+                </div>
+            </div>
+            <div class="swiper-slide slide3">
+                <div class="lin">
+                    <div class="lin1">平凡而不平庸</div>
+                    <div class="lin2">简单而不空白</div>
+                </div>
+                <div class="link">
+                    <span class="link1">生活本就无奈，平常心对待，顺其自然</span><br/>
+                    <span class="link2">工作意向：<i>WEB前端工程师</i></span>
+                </div>
+                <b></b>
+                <div class="aN">
+                    <img src="img/PY4ZM$R%5BQO65M@TZA5%5BC6%60U_03.png" alt=""/>
+                    <img src="img/PY4ZM$R%5BQO65M@TZA5%5BC6%60U_06.png" alt=""/>
+                    <img src="img/PY4ZM$R%5BQO65M@TZA5%5BC6%60U_09.png" alt=""/>
+                    <img src="img/PY4ZM$R%5BQO65M@TZA5%5BC6%60U_13.png" alt=""/>
+                    <img src="img/PY4ZM$R%5BQO65M@TZA5%5BC6%60U_15.png" alt=""/>
+                    <img src="img/PY4ZM$R%5BQO65M@TZA5%5BC6%60U_18.png" alt=""/>
+                </div>
+            </div>
+            <div class="swiper-slide slide4">
+                <div class="xM">
+                    <img src="img/6HL1EU6%5DA%5DMQJ$Y74)0%7D$XG_03.png" alt=""/>
+                    <h1>实战项目</h1>
+                    <p>1  腾讯看比赛   -  web端APP</p>
+                    <p>技术：利用less设计布局样式，通过jsonp实现跨域获取数据，并
+                        用ejs绑定数据,使用zepto实现js部分。
+                        解决的问题：在没有绑定数据前就获取了数据，从而无法对数据进行
+                        操作。在使用less时，要引入js解析一下。</p>
+                    <p>2   腾讯看比赛   -  PC端</p>
+                    <p>技术：利用html5+css3设计布局样式，通过jsonp实现跨域获取数据
+                        ，并用ejs绑定数据。
+                        解决的问题：在没有绑定数据前就获取了数据，从而无法对数据进行
+                        操作。</p>
+                    <p>3   腾讯视频   -  PC端</p>
+                    <p>技术：利用html5+css3设计布局样式。
+                        解决的问题：在没有绑定数据前就获取了数据，从而无法对数据进行
+                        操作,使用iscroll实现局部绑定。</p>
+                </div>
+            </div>
+            <div class="swiper-slide slide5">
+                    <div>
+                        <p>形象化的简历</p>
+                        <p>能否打动求贤若渴的你?</p>
+                    </div>
+                    <div>
+                        <p>不要犹豫了</p>
+                        <p>我就是你们苦苦寻找的三好员工!</p>
+                    </div>
+                    <div>
+                        <p>欢迎电话或邮件联系我</p>
+                        <p>疯狂索取详细简历</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
+<script src="js/swiper.min.js"></script>
+<script>
+    /*不是循环模式的处理*/
+  /*  var mySwiper = new Swiper(".swiper-container",{
+        direction:"vertical",
+        onTransitionEnd:function(swiper){
+            var curIndex = swiper.activeIndex;//当前显示的滑块的索引
+            var slides = swiper.slides;//获得所有的滑块
+            [].forEach.call(slides,function(item,index){
+                item.id="";//把所有滑块的索引去掉
+                if(index ==curIndex ){
+                    item.id = "page"+(curIndex+1);
+                }
+            })
+        },
+        onInit : function(swiper){
+            //对第一个滑块初始化
+            var slides = swiper.slides;
+            slides[0].id = "page1";
+        }
+
+    })*/
+    /*循环模式*/
+    var mySwiper = new Swiper(".swiper-container",{
+       direction:"vertical",
+       loop:true,
+       onTransitionEnd :function(swiper){
+           //把原来的第一个滑块复制了一份放在最后的位置，
+           //把原来的最后一个滑块复制了一份放在第一个位置
+           var slides = swiper.slides;
+           var curIndex = swiper.activeIndex;
+           var lastIndexSlide = slides.length-1;//现在最后一个滑块
+           var trueIndexSlide = slides.length-2;//原来最后一个滑块
+            [].forEach.call(slides,function(item,index){
+                item.id = "";
+                if(curIndex == index){//对当前显示的滑块做判断
+                    switch (index){
+                        case 0:
+                            item.id = "page"+trueIndexSlide;
+                            break;
+                        case lastIndexSlide:
+                            item.id = "page1";
+                            break;
+                        default:
+                            item.id = "page"+curIndex;
+                    }
+                }
+
+            })
+
+       }
+    })
+
+    var music = document.querySelector(".music");
+    var beyond = document.querySelector("#beyond");
+    window.setTimeout(function(){
+        beyond.play();
+        beyond.addEventListener("canplay",function(){
+            music.className = "music musicCur";
+        })
+    },1000)
+    music.addEventListener("click",function(){
+        //paused属性判断音频文件是播放的还是停止 beyond.paused=true说明音频文件目前是停止播放
+        //让音频文件播放play(),让音频文件停止是pause();
+        if(beyond.paused){//停止
+            beyond.play();
+            music.className = "music musicCur";
+        }else{
+            beyond.pause();
+            music.className = "music";
+            music.style.opacity = 1;
+        }
+    },false)
+</script>
